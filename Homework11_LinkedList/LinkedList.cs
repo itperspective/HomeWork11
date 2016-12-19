@@ -22,7 +22,7 @@ namespace Homework11_LinkedList
         } 
 
         Node<T> head = null;
-        public void AddTailNode(T value)
+        public void AddHeadNode(T value)
         {
             Node<T> addNode = new Node<T>();
             addNode.nextNode = head;
@@ -33,7 +33,7 @@ namespace Homework11_LinkedList
 
         }
 
-        public void AddHeadNode(T value)
+        public void AddTailNode(T value)
         {
             Node<T> addNode = new Node<T>();
             addNode.Value = value;
@@ -72,90 +72,92 @@ namespace Homework11_LinkedList
             }
         }
 
-        //public void RemoveTailNode()
-        //{
-        //    if (IsEmpty())
-        //    {
-        //        Console.WriteLine("No Nodes to delete");
-        //    }
-        //    else
-        //    {
-        //        Node<T> temp = head;
-        //        if (temp.nextNode == null)
-        //        {
-        //            head = null;
-        //        }
-        //        else
-        //        {
-
-        //            while (temp.nextNode != null)
-        //            {
-        //                if (temp.nextNode.nextNode == null)
-        //                {
-        //                    temp.nextNode = null;
-        //                    break;
-        //                }
-
-        //                else { temp = temp.nextNode; } 
-        //            }
-        //        }
-        //    }
-        //}
-
-        //public void RemoveHeadNode()
-        //{
-        //    if (IsEmpty())
-        //    {
-        //        Console.WriteLine("No nodes to delete");
-        //    }
-        //    else
-        //    {
-        //        head = head.nextNode;
-        //    }
-        //}
-
-        public void RemoveNode (int index)
+        public void RemoveTailNode()
         {
             if (IsEmpty())
             {
-                Console.WriteLine("No nodex to delete");
+                Console.WriteLine("No Nodes to delete");
             }
-
             else
             {
-                if (size < index)
+                Node<T> temp = head;
+                if (temp.nextNode == null)
                 {
-                    Console.WriteLine("Index is out of range");
+                    head = null;
+                    size = size - 1;
                 }
-
-                
-                else if (index == 0)
-                {
-                    Node<T> temp = head;
-                    //for (int i=0; i< index-1; i++)
-                    //{
-                    //    temp = temp.nextNode;
-                    //}
-
-                    head = temp.nextNode;
-                    temp = null;
-                    
-                    
-                }
-
                 else
                 {
-                    Node<T> temp = head;
-                    for (int i = 0; i < index - 2; i++)
-                    {
-                        temp = temp.nextNode;
-                    }
 
-                    temp.nextNode = null;
-                    size = size - 1;
+                    while (temp.nextNode != null)
+                    {
+                        if (temp.nextNode.nextNode == null)
+                        {
+                            temp.nextNode = null;
+                            size = size - 1;
+                            break;
+                        }
+
+                        else { temp = temp.nextNode; }
+                    }
                 }
             }
         }
+
+        public void RemoveHeadNode()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("No nodes to delete");
+            }
+            else
+            {
+                head = head.nextNode;
+            }
+        }
+
+        //public void RemoveNode (int index)
+        //{
+        //    if (IsEmpty())
+        //    {
+        //        Console.WriteLine("No nodex to delete");
+        //    }
+
+        //    else
+        //    {
+        //        if (size < index)
+        //        {
+        //            Console.WriteLine("Index is out of range");
+        //        }
+
+
+        //        else if (index == 0)
+        //        {
+        //            Node<T> temp = head;
+        //            //for (int i=0; i< index-1; i++)
+        //            //{
+        //            //    temp = temp.nextNode;
+        //            //}
+
+        //            head = temp.nextNode;
+        //            temp = null;
+
+
+        //        }
+
+        //        else
+        //        {
+        //            Node<T> temp = head;
+        //            for (int i = 0; i < index - 2; i++)
+        //            {
+        //                temp = temp.nextNode;
+        //            }
+
+        //            temp.nextNode = null;
+        //            size = size - 1;
+        //        }
+        //    }
+        //}
 
         public void GetNode(int index)
         {

@@ -12,13 +12,13 @@ namespace Homework11_LinkedList
 
         public void Enqueue(T enqueue)
         {
-            linkedList.AddTailNode(enqueue);
+            linkedList.AddHeadNode(enqueue);
         }
 
         public void Dequeue()
         {
             linkedList.GetNode(linkedList.Size);
-            linkedList.RemoveNode(linkedList.Size);
+            linkedList.RemoveTailNode();
         }
 
         public void PrintQueue()

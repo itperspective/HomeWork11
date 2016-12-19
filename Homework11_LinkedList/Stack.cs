@@ -12,13 +12,13 @@ namespace Homework11_LinkedList
 
         public void Push(T value)
         {
-            linkedList.AddTailNode(value);
+            linkedList.AddHeadNode(value);
         }
 
         public void Pop()
         {
             linkedList.GetNode(0);
-            linkedList.RemoveNode(0);
+            linkedList.RemoveHeadNode();
         }
 
         public void Peek()

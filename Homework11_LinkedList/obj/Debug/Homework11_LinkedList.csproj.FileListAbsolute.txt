@@ -4,3 +4,9 @@ c:\users\bogdank\documents\visual studio 2015\Projects\NICE_Training\Lesson11\Ho
 c:\users\bogdank\documents\visual studio 2015\Projects\NICE_Training\Lesson11\Homework11_LinkedList\Homework11_LinkedList\obj\Debug\Homework11_LinkedList.csprojResolveAssemblyReference.cache
 c:\users\bogdank\documents\visual studio 2015\Projects\NICE_Training\Lesson11\Homework11_LinkedList\Homework11_LinkedList\obj\Debug\Homework11_LinkedList.exe
 c:\users\bogdank\documents\visual studio 2015\Projects\NICE_Training\Lesson11\Homework11_LinkedList\Homework11_LinkedList\obj\Debug\Homework11_LinkedList.pdb
+c:\WORK\HomeWorks\HomeWork11\Homework11_LinkedList\bin\Debug\Homework11_LinkedList.exe.config
+c:\WORK\HomeWorks\HomeWork11\Homework11_LinkedList\obj\Debug\Homework11_LinkedList.exe
+c:\WORK\HomeWorks\HomeWork11\Homework11_LinkedList\obj\Debug\Homework11_LinkedList.pdb
+c:\WORK\HomeWorks\HomeWork11\Homework11_LinkedList\bin\Debug\Homework11_LinkedList.exe
+c:\WORK\HomeWorks\HomeWork11\Homework11_LinkedList\bin\Debug\Homework11_LinkedList.pdb
+c:\WORK\HomeWorks\HomeWork11\Homework11_LinkedList\obj\Debug\Homework11_LinkedList.csprojResolveAssemblyReference.cache
